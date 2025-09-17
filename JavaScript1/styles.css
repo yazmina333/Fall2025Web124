@@ -1,6 +1,7 @@
 /*Yazmin Alfaro 09/16/25*/
 /*Learned from https://javascript30.com/CSS + JS Clock*/
 /* Background image from https://unsplash.com */
+
     html {
       background: #e6d434 url(https://images.unsplash.com/photo-1618813690183-c8a0e5de80f0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
       background-size: cover;
@@ -18,6 +19,7 @@
       align-items: center;
     }
 
+    /*Clock styles*/
     .clock {
       width: 30rem;
       height: 30rem;
@@ -43,10 +45,39 @@
     .hand {
       width: 50%;
       height: 6px;
-      background: black;
+      background: rgb(0, 0, 0);
       position: absolute;
       top: 50%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+    .hand.second-hand {
+        background-color: rgb(197, 130, 54);
+        box-shadow: 
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px rgb(197, 130, 54),
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.5);
+    }
+    .hand.min-hand, .hand.hour-hand {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    /*Added text at the bottom of the clock*/
+
+    .text {
+      color: white;
+      font-size: 1rem;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-family: 'helvetica neue';
     }
