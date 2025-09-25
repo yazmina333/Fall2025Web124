@@ -1,4 +1,4 @@
-     //Yazmin Alfaro 09/09/25//
+     //Yazmin Alfaro 09/24/25//
      
      // 1. A variable to store your full name
       var fullName = "John Doe";
@@ -27,3 +27,4 @@
         desiredAnnualSalary: 90000
       };
       console.log("Fourth Friend:", fourthFriend);
+
